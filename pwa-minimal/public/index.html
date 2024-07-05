@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="manifest" href="./app.webmanifest" />
+    <title>PWA-MINIMAL</title>
+  </head>
+  <body>
+    <h1>PWA-MINIMAL</h1>
+    <script>
+      (async _ => {
+        await navigator.serviceWorker.register('./serviceworker.js', { scope: '/' });
+      })();
+    </script>
+  </body>
+</html>
